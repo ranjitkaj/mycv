@@ -16,7 +16,7 @@ def todoapp(request):
 def delete(request, id):
     d = todo.objects.get(id=id)
     d.delete()
-    return redirect("todo")
+    return redirect("todoapp")
 
 # Create your views here.
 def index(request):
